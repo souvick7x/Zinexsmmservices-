@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMM Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Boost Your Social Media Presence</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Instagram Followers Growth</li>
+            <li>Facebook Page Likes</li>
+            <li>Twitter Engagement</li>
+            <li>YouTube Subscribers & Views</li>
+        </ul>
+    </section>
+    
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+                <th>Pay via QR Code</th>
+            </tr>
+            <tr>
+                <td>1000 Instagram Followers</td>
+                <td>$10</td>
+                <td><button onclick="showQRCode()">Scan & Pay</button></td>
+            </tr>
+            <tr>
+                <td>5000 Facebook Likes</td>
+                <td>$20</td>
+                <td><button onclick="showQRCode()">Scan & Pay</button></td>
+            </tr>
+            <tr>
+                <td>100 YouTube Subscribers</td>
+                <td>$15</td>
+                <td><button onclick="showQRCode()">Scan & Pay</button></td>
+            </tr>
+        </table>
+        <div id="qr-popup" style="display:none;">
+            <p>Scan the QR code to make a payment:</p>
+            <img id="qr-image" src="qr-code.png" alt="QR Code">
+            <button onclick="closeQRCode()">Close</button>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 SMM Services</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
